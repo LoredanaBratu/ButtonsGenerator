@@ -18,7 +18,7 @@ The app includes security measures to prevent prompt injection and filters out p
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/LoredanaBratu/ButtonsGenerator.git
     cd buttons-generator
     ```
 
