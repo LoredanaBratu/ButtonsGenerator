@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import ButtonGenerator from "./features/ButtonsGenerator/ButtonGenerator";
+import ButtonsGenerator from "./features/ButtonsGenerator/ButtonsGenerator";
 
 function App() {
   return (
     <div className="App">
-      <ButtonGenerator />
+      <ButtonsGenerator />
     </div>
   );
 }

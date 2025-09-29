@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { fetchButtonHtml } from "../../api/fetchButtonHtml";
-import parse from "html-react-parser";
-import ButtonsGeneratorForm from "./ButtonsGeneratorForm";
-import "./ButtonGenerator.css";
+import ButtonsGeneratorForm from "./components/ButtonsGeneratorForm";
+import ButtonPreview from "./components/ButtonPreview";
+import "./ButtonsGenerator.css";
 import { sanitizeButtonHtml } from "./utils";
 
 function ButtonsGenerator() {
@@ -49,14 +49,11 @@ function ButtonsGenerator() {
         onSubmit={handleFormSubmit}
       />
 
-      <div className="button-generator-preview">
-        {buttonHtml && parse(buttonHtml)}
-        {errorGenerating && (
-          <div className="button-generator-error">
-            Error generating button. Please try again.
-          </div>
-        )}
-      </div>
+      <ButtonPreview
+        loading={loading}
+        buttonHtml={buttonHtml}
+        errorGenerating={errorGenerating}
+      />
     </div>
   );
 }

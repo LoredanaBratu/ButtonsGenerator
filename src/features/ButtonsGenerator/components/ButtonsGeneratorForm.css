@@ -1,14 +1,14 @@
 .button-generator-form {
-  width: 100%;
   gap: 8px;
+  width: 100%;
   display: flex;
-  max-width: 370px;
+  max-width: 480px;
   background: #fff;
   border-radius: 18px;
-  align-items: center;
   margin-bottom: 35px;
   flex-direction: column;
-  padding: 28px 22px 18px 22px;
+  box-sizing: border-box;
+  padding: 28px 22px 28px 22px;
   box-shadow: 0 4px 24px 0 rgba(30, 41, 59, 0.1),
     0 1.5px 6px 0 rgba(30, 41, 59, 0.06);
 }
@@ -33,9 +33,8 @@
 
 .button-generator-error {
   color: #d32f2f;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 4px;
-  margin-left: 2px;
   text-align: left;
 }
 
@@ -71,4 +70,24 @@
   border-radius: 10px;
   border: 1px solid #e4e4e7;
   box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.04);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .button-generator-form {
+    max-width: 100%;
+    padding: 20px 16px;
+    margin-bottom: 24px;
+  }
+
+  .button-generator-form-actions-container {
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .button-generator-submit,
+  .button-generator-clear {
+    width: 100%;
+    min-width: auto;
+  }
 }

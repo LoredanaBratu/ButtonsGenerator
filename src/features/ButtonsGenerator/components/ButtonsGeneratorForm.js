@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { buttonSchema } from "../../schema/buttonSchema";
-import FormTextField from "../../commons/FormTextField";
+import { buttonSchema } from "../../../schema/buttonSchema";
+import FormTextField from "../../../commons/FormTextField";
 import "./ButtonsGeneratorForm.css";
 
 function ButtonsGeneratorForm({ onSubmit, loading, onClear }) {

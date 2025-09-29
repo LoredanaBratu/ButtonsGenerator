@@ -1,0 +1,51 @@
+.button-preview {
+  width: auto;
+  margin-top: 0;
+  padding: 24px;
+  max-width: none;
+  min-height: 80px;
+  min-width: 480px;
+  background: #fff;
+  align-items: center;
+  border-radius: 12px;
+  display: inline-flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1.2px dashed #e4e4e7;
+  box-shadow: 0 1.5px 6px 0 rgba(30, 41, 59, 0.04);
+}
+
+.button-preview-error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.button-preview-placeholder {
+  color: #71717a;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+.button-preview-loading {
+  color: #3b82f6;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .button-preview {
+    width: 100%;
+    min-width: 100%;
+    padding: 20px 16px;
+  }
+
+  .button-preview-placeholder,
+  .button-preview-loading,
+  .button-preview-error {
+    font-size: 12px;
+  }
+}
