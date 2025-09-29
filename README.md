@@ -14,6 +14,31 @@ A modern, interactive web application for generating custom HTML buttons using A
 - **Security First**: Comprehensive input validation and sanitization
 - **Professional UI/UX**: Modern design with smooth interactions and feedback
 
+## Bonus Features Completed
+
+### 1. Input Variations
+
+- **Style Input Option**: Users can enter descriptors like "modern," "minimal," or "cute"
+- **Alternative to Color/Size**: Style input serves as an alternative to traditional color and size inputs
+- **Smart Field Logic**: When style is used, color/size fields are disabled and vice versa
+- **Enhanced Creativity**: Enables more creative and AI-driven button generation
+
+### 2. Improved Experience
+
+- **Modern & Interactive UI**: Clean card-based design with floating labels
+- **Pleasant Visual Design**: Gradient backgrounds, smooth transitions, and professional styling
+- **Loading States**: Clear feedback during button generation with loading indicators
+- **Error Handling**: User-friendly error messages and validation feedback
+- **Responsive Layout**: Mobile-first design that works on all screen sizes
+
+### 3. Security Measures
+
+- **Prompt Injection Protection**: Multi-layer validation prevents malicious AI prompts
+- **Input Filtering**: Strict character filtering blocks dangerous symbols (`<`, `>`)
+- **Zod Schema Validation**: Type-safe validation with comprehensive error handling
+- **Content Sanitization**: All generated HTML is sanitized before display
+- **Length Restrictions**: Enforced input limits prevent abuse
+
 ---
 
 ## Running the Project
