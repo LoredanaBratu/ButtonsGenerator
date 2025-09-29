@@ -1,13 +1,13 @@
 .button-generator-container {
   width: 100%;
   display: flex;
-  min-height: 100vh;
+  padding: 20px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(135deg, #f8fafc 0%, #e3e9f7 100%);
-  padding: 20px;
   box-sizing: border-box;
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(135deg, #f8fafc 0%, #e3e9f7 100%);
 }
 
 .button-generator-title {
@@ -22,16 +22,17 @@
   font-size: 14px;
   color: #52525b;
   max-width: 400px;
+  padding: 0 10px;
   line-height: 1.6;
   text-align: center;
   margin-bottom: 35px;
-  padding: 0 10px;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .button-generator-container {
     padding: 15px;
+    min-height: calc(100vh - 58px);
   }
 
   .button-generator-title {

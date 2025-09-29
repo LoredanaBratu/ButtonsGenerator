@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { fetchButtonHtml } from "../../api/fetchButtonHtml";
-import ButtonsGeneratorForm from "./components/ButtonsGeneratorForm";
-import ButtonPreview from "./components/ButtonPreview";
+import { fetchButtonHtml } from "../api/fetchButtonHtml";
+import ButtonsGeneratorForm from "../components/FormGenerator/ButtonsGeneratorForm";
+import ButtonPreview from "../components/ButtonPreview/ButtonPreview";
 import "./ButtonsGenerator.css";
-import { sanitizeButtonHtml } from "./utils";
+import { sanitizeButtonHtml } from "../utils";
 
 function ButtonsGenerator() {
   const [loading, setLoading] = useState(false);
@@ -39,8 +39,7 @@ function ButtonsGenerator() {
     <div className="button-generator-container">
       <h1 className="button-generator-title">Buttons Generator</h1>
       <p className="button-generator-desc">
-        Instantly create beautiful, custom-styled buttons for your app. Enter
-        your preferred color, size, text, and style, and let us generate a
+        Enter your preferred color, size, text, or style, and generate a
         ready-to-use button for you!
       </p>
       <ButtonsGeneratorForm

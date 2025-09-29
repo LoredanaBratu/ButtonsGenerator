@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { buttonSchema } from "../../../schema/buttonSchema";
-import FormTextField from "../../../commons/FormTextField";
+import { buttonSchema } from "../../schema/buttonSchema";
+import FormTextField from "../../commons/FormTextField";
 import "./ButtonsGeneratorForm.css";
 
 function ButtonsGeneratorForm({ onSubmit, loading, onClear }) {
@@ -31,12 +31,14 @@ function ButtonsGeneratorForm({ onSubmit, loading, onClear }) {
         label="Color"
         register={register}
         error={errors.color}
+        isDisabled={watch("style")}
       />
       <FormTextField
         id="size"
         label="Size"
         register={register}
         error={errors.size}
+        isDisabled={watch("style")}
       />
       <FormTextField
         id="text"
@@ -49,6 +51,7 @@ function ButtonsGeneratorForm({ onSubmit, loading, onClear }) {
         label="Style"
         register={register}
         error={errors.style}
+        isDisabled={watch("color") || watch("size")}
         helperText="Enter a style descriptor (like modern, minimal, or cute) to automatically style your button instead of choosing color or size."
       />
       {errors.form && (

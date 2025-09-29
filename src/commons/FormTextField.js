@@ -11,6 +11,7 @@ const FormTextField = ({
   placeholder = " ",
   inputClassName = "",
   labelClassName = "",
+  isDisabled = false,
   ...rest
 }) => {
   return (
@@ -18,10 +19,12 @@ const FormTextField = ({
       <input
         id={id}
         type={type}
+        disabled={isDisabled}
         placeholder={placeholder}
         {...register(id)}
         className={clsx("form-input", {
           "form-input-error": error,
+          "form-input-disabled": isDisabled,
           [inputClassName]: inputClassName,
         })}
         autoComplete="off"
